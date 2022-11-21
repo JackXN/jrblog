@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>The Self Development Blog</title>
+        <title>Digital.Dev Forums</title>
         <meta name="description" content=" "  />
         <meta name="author" content="Jack Rigan"/>
         <meta itemProp='description' content='Welcome To Nodus. A Technical Blog built for software developers and and techies.'/>
