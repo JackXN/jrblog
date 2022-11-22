@@ -1,26 +1,28 @@
 import { useState } from "react";
-import Logo from "./logo.svg";
+// import Logo from "./logo.svg";
+import Logo from './Logo.png'
 import { Icon } from "./Icon";
-// import { Button } from "./Button";
+import { Button } from "./Button";
+import Image from 'next/image';
 import styles from '../../../styles/globals.css';
 
 
 
 const menuItems = [
   {
-    name: "Apps",
-    icon: "apps",
+    name: "Introduction",
+    icon: "home",
   },
   {
-    name: "Subscriptions",
+    name: "About Us",
     icon: "subscriptions",
   },
   {
-    name: "Library",
+    name: "Login",
     icon: "video_library",
   },
   {
-    name: "Explore",
+    name: "Signup",
     icon: "explore",
   },
   {
@@ -50,7 +52,9 @@ const NavHeader = () => (
     <button type="button">
       <Icon icon="menu"/>
     </button>
-    <img src={Logo} className="sidebar-logo"/>
+
+    //? TRY SVG INSTEAD!
+    <Image src='/Logo.png' height='50' width='50' className="sidebar-logo"/>
   </header>
 );
 
