@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Logo from "./logo.svg";
 import { Icon } from "./Icon";
-import { Button } from "./Button";
-import styles from '../../../styles/globals.css'
+// import { Button } from "./Button";
+import styles from '../../../styles/globals.css';
+
 
 
 const menuItems = [
@@ -47,7 +48,7 @@ const menuItems = [
 const NavHeader = () => (
   <header className='sidebar-header'>
     <button type="button">
-      <Icon icon="menu" />
+      <Icon icon="menu"/>
     </button>
     <img src={Logo} className="sidebar-logo"/>
   </header>
