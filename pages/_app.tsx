@@ -13,15 +13,12 @@
 
 //! Updated Attempt
 
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {BrowserRouter as Router} from 'react-router-dom';
-import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
-
-
-
+// import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
+import Auth0ProviderWithHistory from '../src/auth/auth0-provider-with-history';
 
 
 export default function App({Component, pageProps} : AppProps){
