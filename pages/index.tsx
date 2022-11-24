@@ -10,12 +10,13 @@ import {Sidebar as Example} from '../src/sidebars/sidebar-2/Sidebar';
 import Loading from '../src/components/Loading'
 
 export default function Home() {
+
+
 const {isLoading} = useAuth0();
 
 if(isLoading) {
   return <Loading/>;
 }
-
 
   return (
     <div className={styles.container}>
