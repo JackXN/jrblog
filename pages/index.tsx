@@ -5,6 +5,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 
 // Components
+import Navbar from '../src/components/nav-bar';
 import Nav from '../src/components/Containers/Navbar/Nav';
 import {Sidebar as Example} from '../src/sidebars/sidebar-2/Sidebar';
 import Loading from '../src/components/Loading'
@@ -19,7 +20,7 @@ if(isLoading) {
 }
 
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Digital.Dev Forums</title>
         <meta name="description" content=" "  />
@@ -34,10 +35,7 @@ if(isLoading) {
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0"
     />
       </Head>
-    
-
-{/* <Nav/> */}
-  <Example/>
+{/* <Navbar/> */}
     </div>
   )
 }

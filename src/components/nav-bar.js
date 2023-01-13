@@ -3,24 +3,18 @@ import React from 'react';
 import MainNav from './main-nav';
 import AuthNav from './auth-nav';
 
-const Navbar = () => {
-return (
-<div className='nav-container mb-3'> 
-<nav className='navbar navbar-expand-md navbar-light bg-light'>
+const NavBar = () => {
+  return (
+    <div className="#">
+      <nav className="#">
+        <div className="#">
+          <div className="#" />
+          <MainNav />
+          <AuthNav />
+        </div>
+      </nav>
+    </div>
+  );
+};
 
-<div className='container'>
-<div className='navbar-brand logo'>
-<MainNav/>
-<AuthNav/>
-</div>
-</div>
-
-</nav>
-
-</div>
-)
-}
-
-
-export default Navbar;
-
+export default NavBar;
